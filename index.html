@@ -32,7 +32,23 @@ button {
 
 <body>
 
-<button>▶</button>
+<audio id="audio" src="Autumn 77.mp3"></audio>
+<button id="play">▶</button>
+
+<script>
+const button = document.getElementById("play");
+const audio = document.getElementById("audio");
+
+button.onclick = function() {
+    if (audio.paused) {
+        audio.play();
+        button.textContent = "Ⅱ";
+    } else {
+        audio.pause();
+        button.textContent = "▶";
+    }
+};
+</script>
 
 </body>
 </html>
