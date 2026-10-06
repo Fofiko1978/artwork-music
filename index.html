@@ -1,17 +1,38 @@
-<script>
-const button = document.getElementById("play");
-const audio = document.getElementById("audio");
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artwork</title>
 
-button.onclick = function() {
-    if (audio.paused) {
-        audio.play();
-        button.textContent = "Ⅱ";
-    } else {
-        audio.pause();
-        button.textContent = "▶";
-    }
-};
-</script>
+<style>
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: black;
+    color: white;
+    font-size: 32px;
+}
+</style>
+</head>
+
+<body>
+
+<button>▶</button>
 
 </body>
 </html>
