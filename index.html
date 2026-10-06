@@ -1,0 +1,17 @@
+<script>
+const button = document.getElementById("play");
+const audio = document.getElementById("audio");
+
+button.onclick = function() {
+    if (audio.paused) {
+        audio.play();
+        button.textContent = "Ⅱ";
+    } else {
+        audio.pause();
+        button.textContent = "▶";
+    }
+};
+</script>
+
+</body>
+</html>
